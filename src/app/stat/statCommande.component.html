@@ -1,0 +1,39 @@
+<div class="col-xl-12">
+    <div class="card">
+        <div class="card-header">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Rechercher..." [(ngModel)]="searchTerm">
+            </div>
+        </div>
+        <div class="card-block table-border-style">
+           
+            <div class="table-responsive">
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th>numero </th>
+                            <th>Prenom</th>
+                            <th> Nom</th>
+                            <th>téléphone</th>
+                            <th>burger</th>
+                            <th>état</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                        <!--<tr *ngFor="let com of tabCommande "> -->
+                        <tr  *ngFor="let com of tabCommande">
+                            <td>{{com.id }}</td>
+                            <td>{{com.prenom }}</td>
+                            <td>{{com.nom }}</td>
+                            <td>{{com.telephone }}</td>
+                            <td>{{com.burger_id }}</td>
+                            <td>{{com.etat }}</td>
+                           
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

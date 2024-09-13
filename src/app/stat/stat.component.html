@@ -1,0 +1,133 @@
+<div class="pcoded-wrapper">
+    <div class="pcoded-content">
+      <div class="pcoded-inner-content">
+        <!-- [ breadcrumb ] start -->
+        <!-- [ breadcrumb ] end -->
+        <div class="main-body">
+          <div class="page-wrapper">
+            <!-- [ Main Content ] start -->
+            <div class="row">
+              <div class=" text-center mb-2">
+                <h1 class="title border border-primary p-2 rounded">STATISTIQUES</h1>
+              </div>
+                
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="container mt-5 d-flex justify-content-center ">
+                        <a  [routerLink]="['/commandeEnCour', 'enCour']">
+                            <div class="rectangle">
+                                <div class="row">
+                                    <h3 class="mt-4">Commandes en cours de la Journée</h3>
+                                </div>
+                                <div class="row">
+                                    <h3 class="text-center">{{commandeEnCour}}</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+           
+                <div class="col">
+                    <div class="container mt-5 d-flex justify-content-center ">
+                        <a  [routerLink]="['/commandeValide', 'valide']"> 
+                            <div class="rectangle">
+                                <div class="row">
+                                    <h3 class="mt-4">Commandes Validées de la Journée</h3>
+                                </div>
+                                <div class="row">
+                                    <h3 class="text-center">{{commandeValide}}</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                     
+                </div>
+                <div class="col">
+                    <div class="container mt-5 d-flex justify-content-center ">
+                        <a [routerLink]="['/commandeAnnuler', 'annuler']"> 
+                            <div class="rectangle">
+                                <div class="row">
+                                    <h3 class="mt-4">Commandes Annulées de la Journée</h3>
+                                </div>
+                                <div class="row">
+                                    <h3 class="text-center">{{commandeAnnuler}}</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container mt-5 d-flex justify-content-center ">
+                       
+                            <div class="rectangle">
+                                <div class="row">
+                                    <h3 class="mt-4">Recettes Journalières</h3>
+                                </div>
+                                <div class="row">
+                                    <h3 class="text-center">{{recette}}</h3>
+                                </div>
+                            </div>
+                       
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container mt-5 d-flex justify-content-center ">
+                        <a routerLink="/diagramme"> 
+                             <div class="rectangle">
+                                 <div class="row">
+                                     <h3 class="mt-4">Diagramme des nombres de Vente par Mois</h3>
+                                 </div>
+                             </div>
+                        </a>
+                     </div>
+                </div>
+                <div class="col">
+                    <div class="container mt-5 d-flex justify-content-center ">
+                        <a href=""> 
+                             <div class="rectangle">
+                                 <div class="row">
+                                     <h3 class="mt-4">Commandes en cours</h3>
+                                 </div>
+                                 <div class="row">
+                                     <h3 class="text-center">156</h3>
+                                 </div>
+                             </div>
+                        </a>
+                     </div>
+                </div>
+                <div class="col">
+                    <div class="container mt-5 d-flex justify-content-center ">
+                        <a href=""> 
+                             <div class="rectangle">
+                                 <div class="row">
+                                     <h3 class="mt-4">Commandes en cours</h3>
+                                 </div>
+                                 <div class="row">
+                                     <h3 class="text-center">156</h3>
+                                 </div>
+                             </div>
+                        </a>
+                     </div>
+                </div>
+                <div class="col">
+                    <div class="container mt-5 d-flex justify-content-center ">
+                        <a href=""> 
+                             <div class="rectangle">
+                                 <div class="row">
+                                     <h3 class="mt-4">Commandes en cours</h3>
+                                 </div>
+                                 <div class="row">
+                                     <h3 class="text-center">156</h3>
+                                 </div>
+                             </div>
+                        </a>
+                     </div>
+                </div>
+            </div>
+            <!-- [ Main Content ] end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

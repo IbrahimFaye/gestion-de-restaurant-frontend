@@ -1,0 +1,46 @@
+<div class="col-xl-12">
+    <div class="card">
+        <div class="card-header">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Rechercher..." [(ngModel)]="searchTerm">
+            </div>
+        </div>
+        <div class="card-block table-border-style">
+           
+            <div class="table-responsive">
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th>numero </th>
+                            <th>Prenom</th>
+                            <th> Nom</th>
+                            <th>téléphone</th>
+                            <th>burger</th>
+                            <th>état</th>
+                            <th colspan="2" class="text-center">action</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                        <!--<tr *ngFor="let com of tabCommande "> -->
+                        <tr  *ngFor="let com of filteredCommandes()">
+                            <td>{{com.id }}</td>
+                            <td>{{com.prenom }}</td>
+                            <td>{{com.nom }}</td>
+                            <td>{{com.telephone }}</td>
+
+                            <td>{{ burgerMap.get(com.burger_id) }}</td>
+
+                            <td>{{com.etat }}</td>
+                            <td class="text-center" >
+                                <button class="btn btn-success mx-3" (click)="TerminerCommande(com.id)" *ngIf="com.etat=='en cour'">Valider</button>
+                                <button class="btn btn-danger" (click)="annulerCommande(com.id)" *ngIf="com.etat== 'en cour'">Annuler</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="main-body d-flex justify-content-center align-items-center vh-100">
+    <div class="page-wrapper">
+      <div class="row justify-content-center">
+        <div class="col-sm-8 text-center mb-4">
+          <div class="alert alert-primary mt-2" role="alert">
+            <h1 class="titre-deco">Payement</h1>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="titre-deco"></h3>
+              <hr>
+              <form [formGroup]="burgerForm" (ngSubmit)="PayementCommande()">
+                
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Montant</label>
+                      <input type="number" class="form-control" formControlName="montant">
+                      <br>
+                      <span *ngIf="veriForm && burgerForm.controls.montant.errors">* le montant est obligatoire</span>
+                    </div>
+                   
+                  </div>
+                 
+                  <div class="col-md-6">
+                    
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary mx-2">Submit</button>
+                <button type="reset" class="btn btn-info mx-2">Effacer</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

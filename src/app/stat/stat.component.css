@@ -1,0 +1,17 @@
+.rectangle {
+    background-color: #007bff; /* Couleur de fond */
+    width: 300px; /* Largeur du rectangle */
+    height: 150px; /* Hauteur du rectangle */
+    padding: 15px; /* Ajoute un peu de padding pour éviter que le texte soit collé aux bords */
+    border-radius: 8px; /* Optionnel : arrondit les coins */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optionnel : ajoute une ombre pour la profondeur */
+    text-align: center; /* Centre le texte horizontalement */
+    line-height: 1.5; 
+
+}
+
+h3 {
+    font-size: 1.5rem; /* Taille de la police */
+    font-weight: bold; /* Poids de la police */
+    color: #fff; /* Couleur du texte */
+}
